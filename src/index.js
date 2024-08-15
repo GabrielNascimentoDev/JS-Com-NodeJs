@@ -19,6 +19,10 @@ function quebraEmParagrafos(texto){
     
 }
 
+function tirandoCaracteresEspeciais(palavra){
+    return palavra.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+}
+
 function verificaPalavrasDuplicadas(texto){
     const listaPalavras = texto.split(' ');
     const resultado = {};
