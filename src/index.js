@@ -10,12 +10,14 @@ fs.readFile(link, "utf-8", (erro, texto) => {
 console.log(link);
 
 function quebraEmParagrafos(texto){
-    const paragrafos = texto.split('\n')
+    const paragrafos = texto.toLowerCase().split('\n');
+    console.log(paragrafos);
+    
 }
 
 function verificaPalavrasDuplicadas(texto){
-    const listaPalavras = texto.split(' ')
-    const resultado = {}
+    const listaPalavras = texto.split(' ');
+    const resultado = {};
     listaPalavras.forEach(palavra => {
         resultado[palavra] = (resultado[palavra] || 0 ) + 1
     }); 
