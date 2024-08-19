@@ -32,7 +32,7 @@ function verificaPalavrasDuplicadas(texto){
         resultado[palavraLimpa] = (resultado[palavraLimpa] || 0 ) + 1
         }
     }); 
-    return resultado
+    return resultado;
     
 }
 
