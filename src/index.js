@@ -12,12 +12,10 @@ console.log(link);
 
 function quebraEmParagrafos(texto){
     const paragrafos = texto.toLowerCase().split('\n');
-    const contagem = paragrafos.reduce((acum, paragrafo) =>{
-        if (paragrafo){
-            return [...acum, paragrafo]
-        }
-        return acum     
-    }, []);
+    const contagem = paragrafos.flatMap((paragrafo) => {
+        if (!paragrafo) return []
+        return verificaPalavrasDuplicadas(paragrafo)
+    })
     console.log(contagem);
 }
 
