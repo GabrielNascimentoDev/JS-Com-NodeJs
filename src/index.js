@@ -3,11 +3,13 @@ const fs = require("fs");
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
 
-fs.readFile(link, "utf-8", (erro, texto) => {
+fs.readFile(link, "utf-8", (erro, texto) => {   
     try{
+        if (erro) throw erro
         contaPalavras(texto);
     }  catch(erro){
-        //o que fazer com o erro?
+        if (erro.code === 'ENOENT') console.log('erro que esperava');
+        else console.log('outro erro');
     }
 
     })
