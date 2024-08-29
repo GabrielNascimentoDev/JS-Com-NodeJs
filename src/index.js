@@ -6,12 +6,11 @@ const link = caminhoArquivo[2];
 fs.readFile(link, "utf-8", (erro, texto) => {
     try{
         contaPalavras(texto);
+    }  catch(erro){
+        //o que fazer com o erro?
     }
-    if (erro){
-        console.log('qual é o erro?', erro);
-        return
-    }
-})
+
+    })
 
 function contaPalavras(texto){
     const paragrafos = extraiParagrafos(texto);
