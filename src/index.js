@@ -1,11 +1,8 @@
 const fs = require("fs");
-const trataErros = require("./erros/funcoes-erros");
+const trataErros = require('./erros/funcoes-erros')
 
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
-
-const trataErros = require('./erros/funcoes-erros')
-
 
 fs.readFile(link, 'utf-8', (erro, texto) => {
     try {
