@@ -5,3 +5,5 @@ function trataErros(erros){
         return 'erro na aplicacao'
       }
 }
+
+module.exports = trataErros
