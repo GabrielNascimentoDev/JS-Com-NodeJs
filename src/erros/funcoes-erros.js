@@ -6,4 +6,4 @@ function trataErros(erros){
       }
 }
 
-module.exports = trataErros
+module.exports = trataErros     
