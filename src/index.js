@@ -4,15 +4,16 @@ const trataErros = require("./erros/funcoes-erros");
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
 
-trataErros = require('./erros/funcoes-erros')
-fs.readFile(link, "utf-8", (erro, texto) => {   
-    try{
-        //if (erro) throw erro
-        contaPalavras(texto);
-    }  catch(erro){
-        trataErros(erro)
-    }
+const trataErros = require('./erros/funcoes-erros')
 
+
+fs.readFile(link, 'utf-8', (erro, texto) => {
+    try {
+        if (erro) throw erro;
+        contaPalavras(texto);
+    } catch (erro) {
+        trataErros(erro);
+    }
 })
 
 function contaPalavras(texto){
