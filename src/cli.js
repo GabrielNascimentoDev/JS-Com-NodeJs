@@ -13,3 +13,13 @@ fs.readFile(link, 'utf-8', (erro, texto) => {
         trataErros(erro);
     }
 })
+
+function criaESalvaArquivo(listaPalavras, endereco){
+    const arquivoNovo = `${endereco}/resultado.txt`
+    try{
+        const textoPalavras = JSON.stringify(listaPalavras)
+    } catch(erro){
+        
+    }
+
+}
