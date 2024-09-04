@@ -1,3 +1,5 @@
+import fs from 'fs'
+import trataErros from './erros/funcoes-erros.js';
 const fs = require("fs");
 const trataErros = require('./erros/funcoes-erros')
 
