@@ -27,7 +27,7 @@ fs.readFile(link, 'utf-8', (erro, texto) => {
         })
         .catch((erro)=>{
             throw erro
-        }).finally(()=> console.log('operacao finalizada')
+        }).finally(()=> console.log('operacao finalizada');
         );
        
     } 
