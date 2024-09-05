@@ -26,7 +26,7 @@ fs.readFile(link, 'utf-8', (erro, texto) => {
             console.log('arquivo criado com sucesso');         
         })
         .catch((erro)=>{
-            throw erro
+            throw erro;
         }).finally(()=> console.log('operacao finalizada')
         );
        
