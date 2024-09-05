@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'fs';
 import trataErros from './erros/funcoes-erros.js';
 import { contaPalavras } from './index.js';
 
