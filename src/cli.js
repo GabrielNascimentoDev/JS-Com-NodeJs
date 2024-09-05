@@ -4,7 +4,7 @@ import { contaPalavras } from './index.js';
 
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
-const endereco = caminhoArquivo[3]
+const endereco = caminhoArquivo[3];
 
 fs.readFile(link, 'utf-8', (erro, texto) => {
     try {
