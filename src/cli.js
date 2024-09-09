@@ -1,6 +1,7 @@
 import fs from 'fs';
 import trataErros from './erros/funcoes-erros.js';
 import { contaPalavras } from './index.js';
+import { montaSaidaArquivo } from './helpers.js';
 
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
