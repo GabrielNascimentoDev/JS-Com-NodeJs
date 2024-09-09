@@ -13,4 +13,4 @@ function montaSaidaArquivo(listaPalavras){
     return textoFinal;
 }
 
-export {montaSaidaArquivo}
+export {montaSaidaArquivo};
