@@ -20,7 +20,7 @@ fs.readFile(link, 'utf-8', (erro, texto) => {
 
  function criaESalvaArquivo(listaPalavras, endereco) {
     const arquivoNovo = `${endereco}/resultado.txt`;
-    const textoPalavras = JSON.stringify(listaPalavras);
+    const textoPalavras = montaSaidaArquivo(listaPalavras);
    
         fs.promises.writeFile(arquivoNovo, textoPalavras)
         .then(()=>{
