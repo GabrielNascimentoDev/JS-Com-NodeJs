@@ -6,6 +6,7 @@ function montaSaidaArquivo(listaPalavras){
     let textoFinal = ('')
     listaPalavras.forEach((paragrafo, indice) => {
         const duplicadas = filtraOcorrencias(paragrafo).join(', ')
-        textoFinal = ``
+        textoFinal += `palavras duplicadas no paragrafo ${indice + 1}: 
+        ${duplicadas} \n`
     })
 }
