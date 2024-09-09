@@ -9,4 +9,6 @@ function montaSaidaArquivo(listaPalavras){
         textoFinal += `palavras duplicadas no paragrafo ${indice + 1}: 
         ${duplicadas} \n`
     })
+
+    return textoFinal
 }
