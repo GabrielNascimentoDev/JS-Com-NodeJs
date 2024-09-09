@@ -3,7 +3,7 @@ function filtraOcorrencias(paragrafo){
 }
 
 function montaSaidaArquivo(listaPalavras){
-    let textoFinal = ('')
+    let textoFinal = ('');
     listaPalavras.forEach((paragrafo, indice) => {
         const duplicadas = filtraOcorrencias(paragrafo).join(', ');
         textoFinal += `palavras duplicadas no paragrafo ${indice + 1}: 
